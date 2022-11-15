@@ -15,7 +15,7 @@ function Glassware() {
     })
     return(
         <div>
-            Glassware will go here
+            <h2>Glassware Options</h2>
             {glasswareList}
         </div>
     )

@@ -16,7 +16,7 @@ function Spirits() {
 
     return(
         <div>
-            Spirits will go here
+            <h2>Our Spirits</h2>
             {spiritList}
         </div>
     )

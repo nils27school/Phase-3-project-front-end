@@ -16,7 +16,7 @@ function CocktailMenu() {
 
     return(
         <div>
-        <h1>Cocktail Hour</h1>
+        
         <h3>Menu</h3>
         {cocktailList}
         </div>

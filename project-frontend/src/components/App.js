@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <h1>Cocktail Hour</h1>
         <NavBar/>
         <Routes>
           <Route exact path= "/" element={<CocktailMenu/>}/>
