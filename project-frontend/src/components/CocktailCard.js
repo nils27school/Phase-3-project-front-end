@@ -1,12 +1,22 @@
 import React from "react"
 
-function CocktailCard({cocktailData}) {
-    const {name, ingredients, description} = cocktailData
+function CocktailCard({cocktailData, removeCocktail}) {
+    const {name, ingredients, description, id} = cocktailData
+
+    function handleDelete() {
+        fetch(`http://localhost:9292/cocktails/${id}`, {
+            method: "Delete",
+        })
+        removeCocktail(id)
+    }
+
 return(
     <div>
-        <p>{name}</p>
-        <p>{ingredients}</p>
-        <p>{description}</p>
+        <h3>{name}</h3>        
+        <p>"{description}"</p>
+        <h4>Ingredients:</h4>
+        <p>- {ingredients}</p>
+        <button onClick={handleDelete}>Delete</button>
     </div>
 )
 }

@@ -1,10 +1,20 @@
 import React from "react"
 
-function GlasswareCard({glasswareData}) {
-    const {glass_type} = glasswareData
+function GlasswareCard({glasswareData, setGlassCocktails}) {
+    const {glass_type, id} = glasswareData
+
+    // This component displays each type of glass 
+    //as well as a click button that displays only the cocktails made with that glass
+
+    function handleClick() {
+        fetch(`http://localhost:9292/glassware/${id}`)
+        .then(r => r.json())
+        .then(data => setGlassCocktails(data))
+    }
 return(
     <div>
         <p>{glass_type}</p>
+        <button onClick={handleClick}>Cocktails</button>
     </div>
 )
 }

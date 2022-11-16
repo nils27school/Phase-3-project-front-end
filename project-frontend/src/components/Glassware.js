@@ -1,8 +1,12 @@
 import React, {useState, useEffect} from "react"
 import GlasswareCard from "./GlasswareCard"
+import GlasswareContainer from "./GlasswareContainer"
 
 function Glassware() {
     const [allGlasswares, setAllGlasswares] = useState([])
+    const [glassCocktails, setGlassCocktails] = useState([])
+
+    // Component displays all of the glass options
 
     useEffect(() => {
         fetch('http://localhost:9292/glassware')
@@ -11,12 +15,13 @@ function Glassware() {
     }, [])
 
     const glasswareList = allGlasswares.map(glassware => {
-        return <GlasswareCard key={glassware.id} glasswareData={glassware}/>
+        return <GlasswareCard key={glassware.id} glasswareData={glassware} setGlassCocktails={setGlassCocktails}/>
     })
     return(
         <div>
             <h2>Glassware Options</h2>
             {glasswareList}
+            <GlasswareContainer glassCocktails={glassCocktails}/>
         </div>
     )
 }
