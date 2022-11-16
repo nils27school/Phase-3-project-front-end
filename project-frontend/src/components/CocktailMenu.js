@@ -1,14 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import CocktailCard from "./CocktailCard"
 
-function CocktailMenu() {
-    const [cocktails, setCocktails] = useState([])
-
-    useEffect(() => {
-        fetch('http://localhost:9292/cocktails')
-        .then(r => r.json())
-        .then(data => setCocktails(data))
-    },[])
+function CocktailMenu({cocktails, setCocktails}) {
 
     function removeCocktail(id) {
         const newCocktails = cocktails.filter((cocktail) => cocktail.id !== id)
