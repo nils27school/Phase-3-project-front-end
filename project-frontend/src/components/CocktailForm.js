@@ -1,6 +1,7 @@
 import React, {useState} from "react"
+import EditForm from "./EditForm"
 
-function CocktailForm({cocktails, setCocktails}){
+function CocktailForm({cocktails, setCocktails, editCocktail, handleEditForm, selectedCocktail}){
     const [formData, setFormData] = useState('')
 
     function handleInput(e) {
@@ -72,7 +73,7 @@ function CocktailForm({cocktails, setCocktails}){
                 <input name="ingredients" placeholder="list ingredients here" type="text" onChange={handleInput}/>
                 <input type="submit"/>
             </form>
-            <h3>Edit Form</h3>
+            <EditForm editCocktail={editCocktail} handleEditForm={handleEditForm} selectedCocktail={selectedCocktail}/>
         </div>
     )
 }
