@@ -32,8 +32,10 @@ function EditForm({editCocktail, handleEditForm, selectedCocktail}) {
         <div>
             <h3>Edit Cocktail Details</h3>
             <form onSubmit={handleSubmit}>
+                <div>
                 <label>Name:</label>
                 <input name="name" placeholder="Cocktail Name Here" value={name} type="text" onChange={handleInputChange}/>
+                </div>
                 {/* <label>Spirit:</label>
                 <select name="spirit_id" value={spirit_id} onChange={handleInput2}>
                     <option>Select Spirit</option>
@@ -54,10 +56,14 @@ function EditForm({editCocktail, handleEditForm, selectedCocktail}) {
                     <option value="5">Highball Glass</option>
                     <option value="6">Shot Glass</option>
                 </select> */}
+                <div>
                 <label>Description:</label>
                 <input name="description" placeholder="enter description here" value={description} type="text" onChange={handleInputChange}/>
+                </div>
+                <div>
                 <label>Ingredients:</label>
                 <input name="ingredients" placeholder="list ingredients here" type="text" value={ingredients} onChange={handleInputChange}/>
+                </div>
                 <input type="submit"/>
             </form>
         </div>

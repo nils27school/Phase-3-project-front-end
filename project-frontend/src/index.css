@@ -1,0 +1,119 @@
+html {
+    background-color: #854d27;
+}
+.App {
+    background-color: #854d27;
+    color: #e7e393
+}
+
+#top-bar {
+    height: 5%;
+    text-align: center;
+    
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    columns: 2;
+    padding: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    text-align: center;
+    background-color: #04030f ;
+    border-radius: 10%;
+}
+
+#menu-title {
+    text-align: center;
+    color:#04030f;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.NavBar{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: black;
+    background-color: #e7e393;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 20%;
+}
+
+#glassware-bar {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    background-color: #e7e393;
+    color:#04030f
+}
+
+.spirit-bar {
+    display: inline-flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    background-color: #e7e393;
+    color: #04030f;
+}
+
+.container {
+    background-color: #e7e393;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    border-radius: 5%;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.img {
+    border-radius: 10%;
+}
+
+form {
+    justify-content: center;
+    margin: 20px;
+}
+
+input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+label {
+    padding-right: 10px;
+}
+
+.button {
+    width: 150px;
+    margin-left: 100px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}

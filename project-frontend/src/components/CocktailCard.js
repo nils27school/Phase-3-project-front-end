@@ -15,14 +15,13 @@ function CocktailCard({cocktailData, removeCocktail, setSelectedCocktail}) {
     }
 
 return(
-    <div>
-        <h3>{name}</h3>  
-        <img src={image}/>
+    <div class="cards">
+        <h3>{name}</h3> 
         <p>"{description}"</p>
         <h4>Ingredients:</h4>
         <p>- {ingredients}</p>
-        <button onClick={handleDelete}>Delete</button>
-        <button type="button" onClick={handleClick}>Edit Cocktail</button>
+        <button onClick={handleDelete} class="button">Delete</button>
+        <button type="button" onClick={handleClick} class="button">Edit Cocktail</button>
 
     </div>
 )

@@ -10,8 +10,14 @@ function GlasswareContainer({glassCocktails}) {
     })
 
     return(
-        <div>
-            {list}
+        <div >
+            
+            <div class="container">
+            <h2 id="menu-title">Cocktails</h2>
+                <div class="cards">
+                    {list}
+                </div>
+            </div>
         </div>
     )
 

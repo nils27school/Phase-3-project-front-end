@@ -42,38 +42,52 @@ function CocktailForm({cocktails, setCocktails, editCocktail, handleEditForm, se
     }
     return(
         <div>
-            <h2>Suggest an Addition or Edit!</h2>
-            <h3>Addition Form</h3>
-            <form onSubmit={addCocktail}>
-                <label>Name:</label>
-                <input name="name" placeholder="Cocktail Name Here" type="text" onChange={handleInput}/>
-                <label>Spirit:</label>
-                <select name="spirit_id"  onChange={handleInput2}>
-                    <option>Select Spirit</option>
-                    <option value="1">Whiskey</option>
-                    <option value="2">Tequila</option>
-                    <option value="3">Vodka</option>
-                    <option value="4">Rum</option>
-                    <option value="5">Gin</option>
-                    <option value="6">Brandy</option>
-                </select>
-                <label>Glassware:</label>
-                <select name="glassware_id" onChange={handleInput2}>
-                    <option>Select Glassware</option>
-                    <option value="1">Rock's Glass</option>
-                    <option value="2">Coupe</option>
-                    <option value="3">Collins Glass</option>
-                    <option value="4">Martini Glass</option>
-                    <option value="5">Highball Glass</option>
-                    <option value="6">Shot Glass</option>
-                </select>
-                <label>Description:</label>
-                <input name="description" placeholder="enter description here" type="text" onChange={handleInput}/>
-                <label>Ingredients:</label>
-                <input name="ingredients" placeholder="list ingredients here" type="text" onChange={handleInput}/>
-                <input type="submit"/>
+            <h2 class="page-title">Suggest an Addition or Edit!</h2>
+            <div>
+                <h3>Addition Form</h3>
+                <form onSubmit={addCocktail} class="form">
+                    <div>
+                        <label >Name:</label>
+                        <input name="name" placeholder="Cocktail Name Here" type="text" onChange={handleInput}class="form-box"/>
+                    </div>
+                    <div>
+                        <label>Spirit:</label>
+                        <select name="spirit_id"  class="form-box" onChange={handleInput2}>
+                            <option>Select Spirit</option>
+                            <option value="1">Whiskey</option>
+                            <option value="2">Tequila</option>
+                            <option value="3">Vodka</option>
+                            <option value="4">Rum</option>
+                            <option value="5">Gin</option>
+                            <option value="6">Brandy</option>
+                        </select>
+                    </div>
+                    <div>
+                    <label>Glassware:</label>
+                    <select name="glassware_id" class="form-box" onChange={handleInput2}>
+                        <option>Select Glassware</option>
+                        <option value="1">Rock's Glass</option>
+                        <option value="2">Coupe</option>
+                        <option value="3">Collins Glass</option>
+                        <option value="4">Martini Glass</option>
+                        <option value="5">Highball Glass</option>
+                        <option value="6">Shot Glass</option>
+                    </select>
+                    </div>
+                    <div>
+                    <label>Description:</label>
+                    <input name="description" class="form-box" placeholder="enter description here" type="text" onChange={handleInput}/>
+                    </div>
+                    <div>
+                    <label>Ingredients:</label>
+                    <input name="ingredients" class="form-box" placeholder="list ingredients here" type="text" onChange={handleInput}/>
+                    </div>
+                    <input type="submit"/>
             </form>
+            </div>
+            <div>
             <EditForm editCocktail={editCocktail} handleEditForm={handleEditForm} selectedCocktail={selectedCocktail}/>
+            </div>
         </div>
     )
 }

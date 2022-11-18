@@ -10,8 +10,11 @@ function SpiritContainer({spiritCocktails}) {
     })
 
     return(
-        <div>
-            {list}
+        <div class="container">
+            <h2 id="menu-title">Cocktails</h2>
+            <div class="cards">
+                {list}
+            </div>
         </div>
     )
 

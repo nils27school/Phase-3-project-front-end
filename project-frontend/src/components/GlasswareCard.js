@@ -12,7 +12,7 @@ function GlasswareCard({glasswareData, setGlassCocktails}) {
         .then(data => setGlassCocktails(data))
     }
 return(
-    <div>
+    <div >
         <p>{glass_type}</p>
         <button onClick={handleClick}>Cocktails</button>
     </div>

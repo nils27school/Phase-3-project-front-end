@@ -33,8 +33,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <h1>Cocktail Hour</h1>
-        <NavBar/>
+        <div id="top-bar">
+          <NavBar/>
+        </div>
         <Routes>
           <Route exact path= "/" element={<CocktailMenu cocktails={cocktails} setCocktails={setCocktails} setSelectedCocktail={setSelectedCocktail}/>}/>
           <Route path="/spirits" element={<Spirits/>}/>

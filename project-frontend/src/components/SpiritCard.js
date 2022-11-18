@@ -14,7 +14,7 @@ function SpiritCard({spiritData, setSpiritCocktails}) {
 
 return(
     <div>
-        <p>{spirit_name}</p>
+        <h3>{spirit_name}</h3>
         <p>description: {description}</p>
         <button onClick={handleClick}>Drinks List</button>
     </div>
