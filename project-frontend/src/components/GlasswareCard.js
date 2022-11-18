@@ -1,7 +1,7 @@
 import React from "react"
 
 function GlasswareCard({glasswareData, setGlassCocktails}) {
-    const {glass_type, id} = glasswareData
+    const {glass_type, id, image} = glasswareData
 
     // This component displays each type of glass 
     //as well as a click button that displays only the cocktails made with that glass
@@ -13,6 +13,7 @@ function GlasswareCard({glasswareData, setGlassCocktails}) {
     }
 return(
     <div >
+        <img src={require(`../Assets/${image}.jpg`)} alt="Glass"/>
         <p>{glass_type}</p>
         <button onClick={handleClick}>Cocktails</button>
     </div>

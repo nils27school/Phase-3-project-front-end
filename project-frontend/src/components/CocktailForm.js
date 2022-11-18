@@ -42,17 +42,17 @@ function CocktailForm({cocktails, setCocktails, editCocktail, handleEditForm, se
     }
     return(
         <div>
-            <h2 class="page-title">Suggest an Addition or Edit!</h2>
+            <h2 className="page-title">Suggest an Addition or Edit!</h2>
             <div>
-                <h3>Addition Form</h3>
-                <form onSubmit={addCocktail} class="form">
+                <h3>Addition Form:</h3>
+                <form onSubmit={addCocktail} className="form">
                     <div>
                         <label >Name:</label>
-                        <input name="name" placeholder="Cocktail Name Here" type="text" onChange={handleInput}class="form-box"/>
+                        <input name="name" placeholder="Cocktail Name Here" type="text" onChange={handleInput}className="form-box"/>
                     </div>
                     <div>
                         <label>Spirit:</label>
-                        <select name="spirit_id"  class="form-box" onChange={handleInput2}>
+                        <select name="spirit_id"  className="form-box" onChange={handleInput2}>
                             <option>Select Spirit</option>
                             <option value="1">Whiskey</option>
                             <option value="2">Tequila</option>
@@ -64,7 +64,7 @@ function CocktailForm({cocktails, setCocktails, editCocktail, handleEditForm, se
                     </div>
                     <div>
                     <label>Glassware:</label>
-                    <select name="glassware_id" class="form-box" onChange={handleInput2}>
+                    <select name="glassware_id" className="form-box" onChange={handleInput2}>
                         <option>Select Glassware</option>
                         <option value="1">Rock's Glass</option>
                         <option value="2">Coupe</option>
@@ -76,11 +76,11 @@ function CocktailForm({cocktails, setCocktails, editCocktail, handleEditForm, se
                     </div>
                     <div>
                     <label>Description:</label>
-                    <input name="description" class="form-box" placeholder="enter description here" type="text" onChange={handleInput}/>
+                    <input name="description" className="form-box" placeholder="enter description here" type="text" onChange={handleInput}/>
                     </div>
                     <div>
                     <label>Ingredients:</label>
-                    <input name="ingredients" class="form-box" placeholder="list ingredients here" type="text" onChange={handleInput}/>
+                    <input name="ingredients" className="form-box" placeholder="list ingredients here" type="text" onChange={handleInput}/>
                     </div>
                     <input type="submit"/>
             </form>

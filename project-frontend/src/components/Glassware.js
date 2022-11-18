@@ -19,7 +19,7 @@ function Glassware() {
     })
     return(
         <div>
-            <h2 class="page-title">Glassware Options</h2>
+            <h2 className="page-title">Glassware Options</h2>
             <div id="glassware-bar">
             {glasswareList}
             </div>

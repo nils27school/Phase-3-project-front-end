@@ -13,10 +13,10 @@ function CocktailMenu({cocktails, setCocktails, setSelectedCocktail}) {
     })
 
     return(
-        <div class="container">
+        <div className="container">
             <h2 id="menu-title">Cocktail Menu</h2>
             <div >
-                <div class="cards">
+                <div className="cards">
                     {cocktailList}
                 </div>
             </div>

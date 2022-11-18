@@ -15,6 +15,7 @@ function SpiritCard({spiritData, setSpiritCocktails}) {
 return(
     <div>
         <h3>{spirit_name}</h3>
+        {/* <img src={require(`../Assets/${image}`)} */}
         <p>description: {description}</p>
         <button onClick={handleClick}>Drinks List</button>
     </div>

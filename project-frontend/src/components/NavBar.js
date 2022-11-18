@@ -6,7 +6,7 @@ function NavBar() {
     return (
         <div>
         <nav id="navbar" className="NavBar">
-        <img src={HappyHour} class="img"/>
+        <img src={HappyHour} className="img"/>
             {/* <h1 id="title">Cocktail Hour</h1> */}
             <NavLink to="/">Cocktail Menu</NavLink>
             <NavLink to="/spirits">Spirits</NavLink>

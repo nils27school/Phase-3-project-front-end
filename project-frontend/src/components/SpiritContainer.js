@@ -10,9 +10,9 @@ function SpiritContainer({spiritCocktails}) {
     })
 
     return(
-        <div class="container">
+        <div className="container">
             <h2 id="menu-title">Cocktails</h2>
-            <div class="cards">
+            <div className="cards">
                 {list}
             </div>
         </div>

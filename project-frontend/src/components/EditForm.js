@@ -30,7 +30,7 @@ function EditForm({editCocktail, handleEditForm, selectedCocktail}) {
 
     return(
         <div>
-            <h3>Edit Cocktail Details</h3>
+            <h3>Edit Cocktail Details:</h3>
             <form onSubmit={handleSubmit}>
                 <div>
                 <label>Name:</label>

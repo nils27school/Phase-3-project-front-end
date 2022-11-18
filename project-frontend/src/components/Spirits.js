@@ -23,22 +23,17 @@ function Spirits() {
         .then(data => setAllSpirits(data))
     }, [])
 
-    const images = spiritImages.map(image => {
-        return image.image_url
-    })
-
     const spiritList = allSpirits.map(spirit => {
         return <SpiritCard key={spirit.id} spiritData={spirit} setSpiritCocktails={setSpiritCocktails}/>
     })
 
     return(
         <div>
-            <h2 class="page-title">Our Spirits</h2>
-            <div class="spirit-bar">
+            <h2 className="page-title">Our Spirits</h2>
+            <div className="spirit-bar">
                 {spiritList}
-                <img src={images}/>
             </div>
-            <div class="container">
+            <div className="container">
                 <SpiritContainer spiritCocktails={spiritCocktails}/>
             </div>
         </div>
