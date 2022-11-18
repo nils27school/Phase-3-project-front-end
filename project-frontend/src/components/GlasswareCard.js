@@ -13,7 +13,7 @@ function GlasswareCard({glasswareData, setGlassCocktails}) {
     }
 return(
     <div >
-        <img src={require(`../Assets/${image}.jpg`)} alt="Glass"/>
+        <img src={require(`../Assets/${image}.jpg`)} alt="Glass" className="glassware_image"/>
         <p>{glass_type}</p>
         <button onClick={handleClick}>Cocktails</button>
     </div>

@@ -117,3 +117,9 @@ label {
     display:flex;
     justify-content: center;
 }
+
+.glassware_image {
+    height: 100px;
+    width:100px;
+    border-radius: 30%;
+}
