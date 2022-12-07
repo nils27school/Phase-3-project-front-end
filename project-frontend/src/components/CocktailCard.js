@@ -17,7 +17,7 @@ function CocktailCard({cocktailData, removeCocktail, setSelectedCocktail}) {
 return(
     <div className="cards">
         <h3>{name}</h3> 
-        {/* <img src={require(`../Assets/${image.string}.jpg`)}/> */}
+        <img src={require(`../Assets/${image}.jpg`)} alt="Cocktail" className="cocktail_image"/>
         <p>"{description}"</p>
         <h4>Ingredients:</h4>
         <p>- {ingredients}</p>
